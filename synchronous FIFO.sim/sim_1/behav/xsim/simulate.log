@@ -1,0 +1,89 @@
+Time resolution is 1 ps
+[0] [FIFO] we=0 din=0xxxxx re=0 dout=0xxxxx empty=x full=0
+[10000] [FIFO] we=0 din=0xxxxx re=0 dout=0x0 empty=1 full=0
+[70000] clk i=0 we=0 din=0xxxxx 
+[70000] FIFO is empty, wait for writes to happen
+[70000] [FIFO] we=0 din=0x5e81 re=0 dout=0x0 empty=1 full=0
+[90000] clk i=1 we=0 din=0x5e81 
+[90000] FIFO is empty, wait for writes to happen
+[90000] [FIFO] we=1 din=0x5663 re=0 dout=0x0 empty=1 full=0
+[110000] clk i=2 we=1 din=0x5663 
+[110000] FIFO is empty, wait for writes to happen
+[110000] [FIFO] we=1 din=0x998d re=0 dout=0x0 empty=0 full=0
+[130000] clk i=3 we=1 din=0x998d 
+[130000] clk re=0 rdata=0x0 
+[130000] [FIFO] we=1 din=0x5212 re=1 dout=0x0 empty=0 full=0
+[150000] clk i=4 we=1 din=0x5212 
+[150000] clk re=1 rdata=0x0 
+[150000] [FIFO] we=1 din=0xf176 re=1 dout=0x5663 empty=0 full=0
+[170000] clk i=5 we=1 din=0xf176 
+[170000] clk re=1 rdata=0x5663 
+[170000] [FIFO] we=1 din=0xf78c re=1 dout=0x998d empty=0 full=0
+[190000] clk i=6 we=1 din=0xf78c 
+[190000] clk re=1 rdata=0x998d 
+[190000] [FIFO] we=0 din=0x84c5 re=0 dout=0x5212 empty=0 full=0
+[210000] clk i=7 we=0 din=0x84c5 
+[210000] clk re=0 rdata=0x5212 
+[210000] [FIFO] we=1 din=0x7277 re=0 dout=0x5212 empty=0 full=0
+[230000] clk i=8 we=1 din=0x7277 
+[230000] clk re=0 rdata=0x5212 
+[230000] [FIFO] we=1 din=0x69f2 re=0 dout=0x5212 empty=0 full=0
+[250000] clk i=9 we=1 din=0x69f2 
+[250000] clk re=0 rdata=0x5212 
+[250000] [FIFO] we=0 din=0x4ec5 re=0 dout=0x5212 empty=0 full=0
+[270000] clk i=10 we=0 din=0x4ec5 
+[270000] clk re=0 rdata=0x5212 
+[270000] [FIFO] we=1 din=0x582d re=1 dout=0x5212 empty=0 full=0
+[290000] clk i=11 we=1 din=0x582d 
+[290000] clk re=1 rdata=0x5212 
+[290000] [FIFO] we=1 din=0x870a re=0 dout=0xf176 empty=1 full=0
+[310000] clk i=12 we=1 din=0x870a 
+[310000] FIFO is empty, wait for writes to happen
+[310000] [FIFO] we=0 din=0x45aa re=0 dout=0xf176 empty=0 full=0
+[330000] clk i=13 we=0 din=0x45aa 
+[330000] clk re=0 rdata=0xf176 
+[330000] [FIFO] we=1 din=0x3e96 re=1 dout=0xf176 empty=0 full=0
+[350000] clk i=14 we=1 din=0x3e96 
+[350000] clk re=1 rdata=0xf176 
+[350000] [FIFO] we=1 din=0xd653 re=1 dout=0xf78c empty=0 full=0
+[370000] clk i=15 we=1 din=0xd653 
+[370000] clk re=1 rdata=0xf78c 
+[370000] [FIFO] we=1 din=0x4a02 re=0 dout=0x7277 empty=0 full=0
+[390000] clk i=16 we=1 din=0x4a02 
+[390000] clk re=0 rdata=0x7277 
+[390000] [FIFO] we=1 din=0x72cf re=1 dout=0x7277 empty=0 full=0
+[410000] clk i=17 we=1 din=0x72cf 
+[410000] clk re=1 rdata=0x7277 
+[410000] [FIFO] we=0 din=0xaca re=0 dout=0x69f2 empty=0 full=0
+[430000] clk i=18 we=0 din=0xaca 
+[430000] clk re=0 rdata=0x69f2 
+[430000] [FIFO] we=0 din=0x618a re=1 dout=0x69f2 empty=0 full=0
+[450000] clk i=19 we=0 din=0x618a 
+[450000] clk re=1 rdata=0x69f2 
+[450000] [FIFO] we=0 din=0xf378 re=1 dout=0x582d empty=0 full=0
+[470000] [FIFO] we=0 din=0xf378 re=1 dout=0x870a empty=0 full=0
+[490000] [FIFO] we=0 din=0xf378 re=1 dout=0x3e96 empty=0 full=0
+[510000] [FIFO] we=0 din=0xf378 re=1 dout=0xd653 empty=0 full=0
+[530000] [FIFO] we=0 din=0xf378 re=1 dout=0x4a02 empty=0 full=0
+[550000] [FIFO] we=0 din=0xf378 re=1 dout=0x72cf empty=0 full=0
+[570000] [FIFO] we=0 din=0xf378 re=1 dout=0x7277 empty=0 full=0
+[590000] [FIFO] we=0 din=0xf378 re=1 dout=0x69f2 empty=0 full=0
+[610000] [FIFO] we=0 din=0xf378 re=1 dout=0x582d empty=0 full=0
+[630000] [FIFO] we=0 din=0xf378 re=1 dout=0x870a empty=0 full=0
+[650000] [FIFO] we=0 din=0xf378 re=1 dout=0x3e96 empty=0 full=0
+[670000] [FIFO] we=0 din=0xf378 re=1 dout=0xd653 empty=0 full=0
+[690000] [FIFO] we=0 din=0xf378 re=1 dout=0x4a02 empty=0 full=0
+[710000] [FIFO] we=0 din=0xf378 re=1 dout=0x72cf empty=0 full=0
+[730000] [FIFO] we=0 din=0xf378 re=1 dout=0x7277 empty=0 full=0
+[750000] [FIFO] we=0 din=0xf378 re=1 dout=0x69f2 empty=0 full=0
+[770000] [FIFO] we=0 din=0xf378 re=1 dout=0x582d empty=0 full=0
+[790000] [FIFO] we=0 din=0xf378 re=1 dout=0x870a empty=0 full=0
+[810000] [FIFO] we=0 din=0xf378 re=1 dout=0x3e96 empty=0 full=0
+[830000] [FIFO] we=0 din=0xf378 re=1 dout=0xd653 empty=0 full=0
+[850000] [FIFO] we=0 din=0xf378 re=1 dout=0x4a02 empty=0 full=0
+[870000] [FIFO] we=0 din=0xf378 re=1 dout=0x72cf empty=0 full=0
+[890000] [FIFO] we=0 din=0xf378 re=1 dout=0x7277 empty=0 full=0
+[910000] [FIFO] we=0 din=0xf378 re=1 dout=0x69f2 empty=0 full=0
+[930000] [FIFO] we=0 din=0xf378 re=1 dout=0x582d empty=0 full=0
+[950000] [FIFO] we=0 din=0xf378 re=1 dout=0x870a empty=0 full=0
+$finish called at time : 970 ns : File "F:/VerilogProject/synchronous FIFO/synchronous FIFO.srcs/sim_1/new/sync_fifo_tb.v" Line 95
