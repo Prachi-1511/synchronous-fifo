@@ -1,0 +1,11 @@
+# Vivado local directories and workspace configurations
+*.jou
+*.log
+*.str
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+
+# Simulation run directories
+*.sim/
