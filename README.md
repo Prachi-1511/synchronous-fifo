@@ -16,7 +16,7 @@ The design utilizes a dual-port RAM array controlled by binary-coded read and wr
 - **Simulation Tool:** Vivado XSIM / ModelSim
 
 ## Simulation Results
-*(Tip: Add a screenshot of your Vivado simulation waveforms here showing successful burst read/write operations!)*
+<img width="1298" height="341" alt="image" src="https://github.com/user-attachments/assets/f0ad2a03-1c74-478e-8c03-6d2d4282cf5a" />
 
 ## How to Run (Vivado)
 1. Clone this repository.
