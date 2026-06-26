@@ -30,7 +30,13 @@ module sync_fifo #(parameter depth=8, width=16)
     reg [$clog2(depth)-1:0] wptr;
     reg [$clog2(depth)-1:0] rptr;
     
-    reg[width-1:0] fifo[0:depth-1];
+    reg [width-1:0] fifo[0:depth-1];
+    
+    integer i;
+    initial begin
+        for(i=0; i<depth; i=i+1)
+            fifo[i] = {width{1'b0}};
+    end    
     
     always @(posedge clk) begin
         if(!rstn)
@@ -61,7 +67,7 @@ module sync_fifo #(parameter depth=8, width=16)
         end
     end
     
-    assign full = (wptr==width);
-    assign empty = (wptr==0);
+    assign full = (fifo[0] != 0) & (fifo[depth-1] != 0);
+    assign empty = (fifo[0] == 0);
     
 endmodule

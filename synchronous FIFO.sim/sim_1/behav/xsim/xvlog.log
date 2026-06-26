@@ -1,5 +1,5 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VerilogProject/synchronous FIFO/synchronous FIFO.srcs/sources_1/new/sync_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VerilogProject/synchronous_FIFO/synchronous FIFO.srcs/sources_1/new/sync_fifo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sync_fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VerilogProject/synchronous FIFO/synchronous FIFO.srcs/sim_1/new/sync_fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VerilogProject/synchronous_FIFO/synchronous FIFO.srcs/sim_1/new/sync_fifo_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sync_fifo_tb
-WARNING: [VRFC 10-2096] empty statement in sequential block [F:/VerilogProject/synchronous FIFO/synchronous FIFO.srcs/sim_1/new/sync_fifo_tb.v:68]
+WARNING: [VRFC 10-2096] empty statement in sequential block [F:/VerilogProject/synchronous_FIFO/synchronous FIFO.srcs/sim_1/new/sync_fifo_tb.v:68]

@@ -1,5 +1,5 @@
 Time resolution is 1 ps
-[0] [FIFO] we=0 din=0xxxxx re=0 dout=0xxxxx empty=x full=0
+[0] [FIFO] we=0 din=0xxxxx re=0 dout=0xxxxx empty=1 full=0
 [10000] [FIFO] we=0 din=0xxxxx re=0 dout=0x0 empty=1 full=0
 [70000] clk i=0 we=0 din=0xxxxx 
 [70000] FIFO is empty, wait for writes to happen
@@ -36,54 +36,97 @@ Time resolution is 1 ps
 [270000] [FIFO] we=1 din=0x582d re=1 dout=0x5212 empty=0 full=0
 [290000] clk i=11 we=1 din=0x582d 
 [290000] clk re=1 rdata=0x5212 
-[290000] [FIFO] we=1 din=0x870a re=0 dout=0xf176 empty=1 full=0
-[310000] clk i=12 we=1 din=0x870a 
-[310000] FIFO is empty, wait for writes to happen
-[310000] [FIFO] we=0 din=0x45aa re=0 dout=0xf176 empty=0 full=0
-[330000] clk i=13 we=0 din=0x45aa 
+[290000] [FIFO] we=1 din=0x870a re=0 dout=0xf176 empty=0 full=1
+[310000] FIFO is full, wait for reads to happen
+[310000] clk re=0 rdata=0xf176 
+[330000] FIFO is full, wait for reads to happen
 [330000] clk re=0 rdata=0xf176 
-[330000] [FIFO] we=1 din=0x3e96 re=1 dout=0xf176 empty=0 full=0
-[350000] clk i=14 we=1 din=0x3e96 
-[350000] clk re=1 rdata=0xf176 
-[350000] [FIFO] we=1 din=0xd653 re=1 dout=0xf78c empty=0 full=0
-[370000] clk i=15 we=1 din=0xd653 
-[370000] clk re=1 rdata=0xf78c 
-[370000] [FIFO] we=1 din=0x4a02 re=0 dout=0x7277 empty=0 full=0
-[390000] clk i=16 we=1 din=0x4a02 
-[390000] clk re=0 rdata=0x7277 
-[390000] [FIFO] we=1 din=0x72cf re=1 dout=0x7277 empty=0 full=0
-[410000] clk i=17 we=1 din=0x72cf 
-[410000] clk re=1 rdata=0x7277 
-[410000] [FIFO] we=0 din=0xaca re=0 dout=0x69f2 empty=0 full=0
-[430000] clk i=18 we=0 din=0xaca 
-[430000] clk re=0 rdata=0x69f2 
-[430000] [FIFO] we=0 din=0x618a re=1 dout=0x69f2 empty=0 full=0
-[450000] clk i=19 we=0 din=0x618a 
+[350000] FIFO is full, wait for reads to happen
+[350000] clk re=0 rdata=0xf176 
+[350000] [FIFO] we=1 din=0x870a re=1 dout=0xf176 empty=0 full=1
+[370000] FIFO is full, wait for reads to happen
+[370000] clk re=1 rdata=0xf176 
+[370000] [FIFO] we=1 din=0x870a re=0 dout=0xf78c empty=0 full=1
+[390000] FIFO is full, wait for reads to happen
+[390000] clk re=0 rdata=0xf78c 
+[390000] [FIFO] we=1 din=0x870a re=1 dout=0xf78c empty=0 full=1
+[410000] FIFO is full, wait for reads to happen
+[410000] clk re=1 rdata=0xf78c 
+[410000] [FIFO] we=1 din=0x870a re=1 dout=0x7277 empty=0 full=1
+[430000] FIFO is full, wait for reads to happen
+[430000] clk re=1 rdata=0x7277 
+[430000] [FIFO] we=1 din=0x870a re=1 dout=0x69f2 empty=0 full=1
+[450000] FIFO is full, wait for reads to happen
 [450000] clk re=1 rdata=0x69f2 
-[450000] [FIFO] we=0 din=0xf378 re=1 dout=0x582d empty=0 full=0
-[470000] [FIFO] we=0 din=0xf378 re=1 dout=0x870a empty=0 full=0
-[490000] [FIFO] we=0 din=0xf378 re=1 dout=0x3e96 empty=0 full=0
-[510000] [FIFO] we=0 din=0xf378 re=1 dout=0xd653 empty=0 full=0
-[530000] [FIFO] we=0 din=0xf378 re=1 dout=0x4a02 empty=0 full=0
-[550000] [FIFO] we=0 din=0xf378 re=1 dout=0x72cf empty=0 full=0
-[570000] [FIFO] we=0 din=0xf378 re=1 dout=0x7277 empty=0 full=0
-[590000] [FIFO] we=0 din=0xf378 re=1 dout=0x69f2 empty=0 full=0
-[610000] [FIFO] we=0 din=0xf378 re=1 dout=0x582d empty=0 full=0
-[630000] [FIFO] we=0 din=0xf378 re=1 dout=0x870a empty=0 full=0
-[650000] [FIFO] we=0 din=0xf378 re=1 dout=0x3e96 empty=0 full=0
-[670000] [FIFO] we=0 din=0xf378 re=1 dout=0xd653 empty=0 full=0
-[690000] [FIFO] we=0 din=0xf378 re=1 dout=0x4a02 empty=0 full=0
-[710000] [FIFO] we=0 din=0xf378 re=1 dout=0x72cf empty=0 full=0
-[730000] [FIFO] we=0 din=0xf378 re=1 dout=0x7277 empty=0 full=0
-[750000] [FIFO] we=0 din=0xf378 re=1 dout=0x69f2 empty=0 full=0
-[770000] [FIFO] we=0 din=0xf378 re=1 dout=0x582d empty=0 full=0
-[790000] [FIFO] we=0 din=0xf378 re=1 dout=0x870a empty=0 full=0
-[810000] [FIFO] we=0 din=0xf378 re=1 dout=0x3e96 empty=0 full=0
-[830000] [FIFO] we=0 din=0xf378 re=1 dout=0xd653 empty=0 full=0
-[850000] [FIFO] we=0 din=0xf378 re=1 dout=0x4a02 empty=0 full=0
-[870000] [FIFO] we=0 din=0xf378 re=1 dout=0x72cf empty=0 full=0
-[890000] [FIFO] we=0 din=0xf378 re=1 dout=0x7277 empty=0 full=0
-[910000] [FIFO] we=0 din=0xf378 re=1 dout=0x69f2 empty=0 full=0
-[930000] [FIFO] we=0 din=0xf378 re=1 dout=0x582d empty=0 full=0
-[950000] [FIFO] we=0 din=0xf378 re=1 dout=0x870a empty=0 full=0
-$finish called at time : 970 ns : File "F:/VerilogProject/synchronous FIFO/synchronous FIFO.srcs/sim_1/new/sync_fifo_tb.v" Line 95
+[450000] [FIFO] we=1 din=0x870a re=1 dout=0x582d empty=0 full=1
+[470000] FIFO is full, wait for reads to happen
+[470000] clk re=1 rdata=0x582d 
+[470000] [FIFO] we=1 din=0x870a re=1 dout=0x5663 empty=0 full=1
+[490000] FIFO is full, wait for reads to happen
+[490000] clk re=1 rdata=0x5663 
+[490000] [FIFO] we=1 din=0x870a re=0 dout=0x998d empty=0 full=1
+[510000] FIFO is full, wait for reads to happen
+[510000] clk re=0 rdata=0x998d 
+[530000] FIFO is full, wait for reads to happen
+[530000] clk re=0 rdata=0x998d 
+[530000] [FIFO] we=1 din=0x870a re=1 dout=0x998d empty=0 full=1
+[550000] FIFO is full, wait for reads to happen
+[550000] clk re=1 rdata=0x998d 
+[550000] [FIFO] we=1 din=0x870a re=1 dout=0x5212 empty=0 full=1
+[570000] FIFO is full, wait for reads to happen
+[570000] clk re=1 rdata=0x5212 
+[570000] [FIFO] we=1 din=0x870a re=1 dout=0xf176 empty=0 full=1
+[590000] FIFO is full, wait for reads to happen
+[590000] clk re=1 rdata=0xf176 
+[590000] [FIFO] we=1 din=0x870a re=0 dout=0xf78c empty=0 full=1
+[610000] FIFO is full, wait for reads to happen
+[610000] clk re=0 rdata=0xf78c 
+[630000] FIFO is full, wait for reads to happen
+[630000] clk re=0 rdata=0xf78c 
+[650000] FIFO is full, wait for reads to happen
+[650000] clk re=0 rdata=0xf78c 
+[670000] FIFO is full, wait for reads to happen
+[670000] clk re=0 rdata=0xf78c 
+[690000] FIFO is full, wait for reads to happen
+[690000] clk re=0 rdata=0xf78c 
+[690000] [FIFO] we=1 din=0x870a re=1 dout=0xf78c empty=0 full=1
+[710000] FIFO is full, wait for reads to happen
+[710000] clk re=1 rdata=0xf78c 
+[710000] [FIFO] we=1 din=0x870a re=0 dout=0x7277 empty=0 full=1
+[730000] FIFO is full, wait for reads to happen
+[730000] clk re=0 rdata=0x7277 
+[750000] FIFO is full, wait for reads to happen
+[750000] clk re=0 rdata=0x7277 
+[750000] [FIFO] we=1 din=0x870a re=1 dout=0x7277 empty=0 full=1
+[770000] FIFO is full, wait for reads to happen
+[770000] clk re=1 rdata=0x7277 
+[770000] [FIFO] we=1 din=0x870a re=1 dout=0x69f2 empty=0 full=1
+[790000] FIFO is full, wait for reads to happen
+[790000] clk re=1 rdata=0x69f2 
+[790000] [FIFO] we=1 din=0x870a re=0 dout=0x582d empty=0 full=1
+[810000] FIFO is full, wait for reads to happen
+[810000] clk re=0 rdata=0x582d 
+[830000] FIFO is full, wait for reads to happen
+[830000] clk re=0 rdata=0x582d 
+[850000] FIFO is full, wait for reads to happen
+[850000] clk re=0 rdata=0x582d 
+[870000] FIFO is full, wait for reads to happen
+[870000] clk re=0 rdata=0x582d 
+[890000] FIFO is full, wait for reads to happen
+[890000] clk re=0 rdata=0x582d 
+[890000] [FIFO] we=1 din=0x870a re=1 dout=0x582d empty=0 full=1
+[910000] FIFO is full, wait for reads to happen
+[910000] clk re=1 rdata=0x582d 
+[910000] [FIFO] we=1 din=0x870a re=1 dout=0x5663 empty=0 full=1
+[930000] FIFO is full, wait for reads to happen
+[930000] clk re=1 rdata=0x5663 
+[930000] [FIFO] we=1 din=0x870a re=1 dout=0x998d empty=0 full=1
+[950000] FIFO is full, wait for reads to happen
+[950000] clk re=1 rdata=0x998d 
+[950000] [FIFO] we=1 din=0x870a re=1 dout=0x5212 empty=0 full=1
+[970000] FIFO is full, wait for reads to happen
+[970000] clk re=1 rdata=0x5212 
+[970000] [FIFO] we=1 din=0x870a re=1 dout=0xf176 empty=0 full=1
+[990000] FIFO is full, wait for reads to happen
+[990000] clk re=1 rdata=0xf176 
+[990000] [FIFO] we=1 din=0x870a re=0 dout=0xf78c empty=0 full=1
