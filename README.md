@@ -52,6 +52,8 @@ assign full  = (wptr == rptr - 1);
 assign empty = (wptr == rptr);
 ```
 
+![GDSII Layout — sync_fifo on SkyWater 130nm](docs/images/gdsii_layout.png)
+
 ## ASIC Flow (OpenLane, PDK: sky130A, standard cell lib: sky130_fd_sc_hd)
 
 Full flow run through synthesis, floorplanning, placement, CTS, routing, and sign-off, targeting a 10ns (100MHz) clock.
